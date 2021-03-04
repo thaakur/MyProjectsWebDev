@@ -21,7 +21,7 @@ function complete() {
 
 //Show New Quote
 function newQuote() {
-    loading();
+    //loading();
     // Pick a random quote from data array
     const quote = quoteBox[Math.floor(Math.random()*quoteBox.length)];
     // Check if Author is none and replace it with "Unknown"
@@ -38,12 +38,12 @@ function newQuote() {
     }
     // Set Quote, Hide Loader
     quoteText.textContent = quote.text;  
-    complete();
+    //complete();
 }
 
 // Get Quote From API 
 async function getQuote() {
-    loading();
+    //loading();
     const apiUrl = "https://type.fit/api/quotes";
     try {
         const response = await fetch(apiUrl);
